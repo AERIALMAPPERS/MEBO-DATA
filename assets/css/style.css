@@ -880,6 +880,11 @@ p{
 }
 #footer .copyright {
   text-align: center;
+
+}
+#footer a{
+  color: #1d8ae2;
+
 }
 #footer .credits {
   padding-top: 10px;
