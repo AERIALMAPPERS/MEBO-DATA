@@ -482,16 +482,58 @@
     <!-- Data Download Section -->
    
   <!-- Data Download Section -->
-  <section id="download">
-    <!-- <h2>Data Download</h2> -->
-    <p>Access detailed survey reports, maps, and datasets from the project.</p>
-    <ul>
-        <li><a href="files/Topographical_Survey_Report.pdf" download>Topographical Survey Report (PDF)</a></li>
-        <li><a href="files/Bathymetry_Data.csv" download>Bathymetric Data (CSV)</a></li>
-        <li><a href="files/LiDAR_Survey_Maps.zip" download>LiDAR Survey Maps (ZIP)</a></li>
-        <li><a href="files/UAV_Aerial_Images.zip" download>UAV Aerial Images (ZIP)</a></li>
-    </ul>
-</section>
+  <div class="container">
+    <!-- <h2>DATA ACCESS</h2> -->
+    <p>The Detailed Topographical and Bathymetric Survey for the Mebo Irrigation Project successfully achieved its
+        objectives by leveraging advanced technologies such as DGPS, UAVs, LiDAR, and GIS tools.<br> Despite challenges
+        such as shallow water depths in the river, alternative methodologies ensured comprehensive data collection
+        and adherence to the project’s technical requirements.<br>
+        <p> Export maps and designs in formats like <span> DWG, PDF, or DGN </span> for sharing and collaboration.<br>
+            web portals provide download options for DWG and PDF files, allowing users to view and access essential data efficiently </p>
+    <input type="text" id="searchBar" placeholder="Search documents..." onkeyup="searchDocuments()">
+
+    <table>
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>View / Download</th>
+            </tr>
+        </thead>
+        <tbody id="documentTable">
+            <tr>
+                <td>Data</td>
+                <td><a href=" https://aerialmappers.github.io/final-coastal" target="_blank">View (6 MB) <img
+                            src="https://img.icons8.com/material-rounded/24/download--v1.png" alt="download--v1"
+                            class="icon"></a></td>
+            </tr>
+            <tr>
+                <td>Report of Mebo Project </td>
+                <td><a href="./data/Project_Report_Mebo_Irrigation_Vol-I.pdf" target="_blank">View (2 MB) <img
+                            src="https://img.icons8.com/color/48/pdf.png" class="icon"></a></td>
+            </tr>
+            <tr>
+                <td>ECW Map Data</td>
+                <td><a href="your_link_here.ecw" download>Download <img src="ecw-icon.png" class="icon"></a></td>
+            </tr>
+            <tr>
+                <td>DWG  File</td>
+                <td><a href="your_link_here.dwg" download>Download <img src="dwg-icon.png" class="icon"></a></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<script>
+    function searchDocuments() {
+        let input = document.getElementById("searchBar").value.toLowerCase();
+        let tableRows = document.querySelectorAll("#documentTable tr");
+
+        tableRows.forEach(row => {
+            let text = row.innerText.toLowerCase();
+            row.style.display = text.includes(input) ? "" : "none";
+        });
+    }
+</script>
 
       </div>
     </div>
