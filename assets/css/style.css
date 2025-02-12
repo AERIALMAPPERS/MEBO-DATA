@@ -1,0 +1,893 @@
+/**
+* Template Name: Imperial - v5.7.0
+* Template URL: https://bootstrapmade.com/imperial-free-onepage-bootstrap-theme/
+* Author: BootstrapMade.com
+* License: https://bootstrapmade.com/license/
+*/
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+body {
+  background: #fff;
+  color: #666666;
+  font-family: "Open Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #f0860e;
+  transition: 0.5s;
+}
+
+a:hover, a:active, a:focus {
+  color: #f0860e;
+  outline: none;
+  text-decoration: none;
+}
+
+p {
+  padding: 0;
+  margin: 0 0 30px 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  margin: 0 0 20px 0;
+  padding: 0;
+}
+
+/* Prelaoder */
+#preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  background: #fff url("../img/preloader.svg") no-repeat center center;
+}
+
+/*--------------------------------------------------------------
+# Back to top button
+--------------------------------------------------------------*/
+.back-to-top {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 15px;
+  bottom: 15px;
+  z-index: 996;
+  background:rgb(1, 31, 75);
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  transition: all 0.4s;
+}
+.back-to-top i {
+  font-size: 28px;
+  color: #fff;
+  line-height: 0;
+}
+.back-to-top:hover {
+  background: #198ca0;
+  color: #fff;
+}
+.back-to-top.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+/*--------------------------------------------------------------
+# Welcome
+--------------------------------------------------------------*/
+/* #hero {
+  display: table;
+  width: 100%;
+  height: 100vh;
+  background: url(../img/BackImg.jpeg) top center;
+  background-size: cover;
+}
+@media (min-width: 1024px) {
+  #hero {
+    background-attachment: fixed;
+  }
+}
+#hero .hero-logo {
+  margin: 20px;
+}
+#hero .hero-logo img {
+  max-width: 100%;
+}
+#hero .hero-container {
+  background: rgba(0, 0, 0, 0.8);
+  display: table-cell;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  vertical-align: middle;
+}
+#hero h1 {
+  margin: 30px 0 10px 0;
+  font-weight: 700;
+  line-height: 48px;
+  text-transform: uppercase;
+  color: #fff;
+}
+@media (max-width: 768px) {
+  #hero h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+}
+#hero h2 {
+  color: #ccc;
+  margin-bottom: 50px;
+}
+#hero h2 span {
+  color: #fff;
+  transition: 0.3s;
+  border-bottom: 2px solid #f0860e;
+}
+@media (max-width: 768px) {
+  #hero h2 {
+    font-size: 24px;
+    line-height: 26px;
+    margin-bottom: 30px;
+  }
+  #hero h2 .rotating {
+    display: block;
+  }
+}
+#hero .rotating > .animated {
+  display: inline-block;
+}
+#hero .actions a {
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 20px;
+  border-radius: 2px;
+  transition: 0.5s;
+  margin: 10px;
+}
+#hero .btn-get-started {
+  background: #f0860e;
+  border: 2px solid #f0860e;
+  color: #fff;
+}
+#hero .btn-get-started:hover {
+  background: none;
+  border: 2px solid #fff;
+  color: #fff;
+}
+#hero .btn-services {
+  border: 2px solid #fff;
+  color: #fff;
+}
+#hero .btn-services:hover {
+  background: #f0860e;
+  border: 2px solid #f0860e;
+} */
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+#header {
+  background: #3b69ff;
+  transition: all 0.5s;
+  z-index: 997;
+  height: 70px;
+}
+@media (max-width: 992px) {
+  #header {
+    height: 60px;
+  }
+}
+#header.fixed-top {
+  background: rgba(1, 11, 66, 0.87);
+}
+#header .logo {
+  font-size: 30px;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+#header .logo a {
+  color: #fff;
+}
+#header .logo img {
+  height: 50px;
+}
+
+.scrolled-offset {
+  margin-top: 70px;
+}
+@media (max-width: 992px) {
+  .scrolled-offset {
+    margin-top: 60px;
+  }
+}
+
+/*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+/**
+* Desktop Navigation 
+*/
+.navbar {
+  padding: 0;
+}
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+.navbar li {
+  position: relative;
+}
+.navbar a, .navbar a:focus {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0 10px 30px;
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+  white-space: nowrap;
+  transition: 0.3s;
+}
+.navbar a i, .navbar a:focus i {
+  font-size: 12px;
+  line-height: 0;
+  margin-left: 5px;
+}
+.navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
+  color: #44b6e4;
+}
+.navbar .dropdown ul {
+  display: block;
+  position: absolute;
+  left: 14px;
+  top: calc(100% + 30px);
+  margin: 0;
+  padding: 10px 0;
+  z-index: 99;
+  opacity: 0;
+  visibility: hidden;
+  background: #fff;
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+  transition: 0.3s;
+}
+.navbar .dropdown ul li {
+  min-width: 200px;
+}
+.navbar .dropdown ul a {
+  padding: 10px 20px;
+  text-transform: none;
+  color: #44b6e4;
+}
+.navbar .dropdown ul a i {
+  font-size: 12px;
+}
+.navbar .dropdown ul a:hover, .navbar .dropdown ul .active:hover, .navbar .dropdown ul li:hover > a {
+  color: #44b6e4;
+}
+.navbar .dropdown:hover > ul {
+  opacity: 1;
+  top: 100%;
+  visibility: visible;
+}
+.navbar .dropdown .dropdown ul {
+  top: 0;
+  left: calc(100% - 30px);
+  visibility: hidden;
+}
+.navbar .dropdown .dropdown:hover > ul {
+  opacity: 1;
+  top: 0;
+  left: 100%;
+  visibility: visible;
+}
+
+/* Dropdown menu hidden by default */
+.navbar .dropdown ul {
+  /* display: none; */
+  position: absolute;
+  left: 0;
+  top: 100%;
+  margin: 0;
+  padding: 5px 5px;
+  z-index: 99;
+  transition: 0.5s;
+}
+/* ------------------Contact Dropdown---------------------------- */
+/* Show dropdown on hover */
+.navbar .dropdown:hover ul {
+  display: block;
+  opacity: 10;
+  visibility: visible;
+}
+
+.navbar .dropdown ul li {
+  min-width: 100px;
+}
+
+.navbar .dropdown ul a {
+  padding: 5px 5px;
+  color: #1e0880;
+  text-transform: none;
+  transition: 0.3s;
+}
+
+.navbar .dropdown ul a:hover {
+  color: #f0860e;
+}
+
+.navbar .dropdown ul a:hover {
+  text-decoration: underline;
+}
+/* ------------------------End Contact Dropdown-------------------------- */
+
+@media (max-width: 1366px) {
+  .navbar .dropdown .dropdown ul {
+    left: -90%;
+  }
+  .navbar .dropdown .dropdown:hover > ul {
+    left: -100%;
+  }
+}
+
+/**
+* Mobile Navigation 
+*/
+.mobile-nav-toggle {
+  color: #fff;
+  font-size: 28px;
+  cursor: pointer;
+  display: none;
+  line-height: 0;
+  transition: 0.5s;
+}
+
+@media (max-width: 991px) {
+  .mobile-nav-toggle {
+    display: block;
+  }
+
+  .navbar ul {
+    display: none;
+  }
+}
+.navbar-mobile {
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(26, 26, 26, 0.9);
+  transition: 0.3s;
+  z-index: 999;
+}
+.navbar-mobile .mobile-nav-toggle {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+.navbar-mobile ul {
+  display: block;
+  position: absolute;
+  top: 55px;
+  right: 15px;
+  bottom: 15px;
+  left: 15px;
+  padding: 10px 0;
+  background-color: #fff;
+  overflow-y: auto;
+  transition: 0.3s;
+}
+.navbar-mobile a, .navbar-mobile a:focus {
+  padding: 10px 20px;
+  font-size: 15px;
+  color: #333333;
+}
+.navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover > a {
+  color: #f0860e;
+}
+.navbar-mobile .getstarted, .navbar-mobile .getstarted:focus {
+  margin: 15px;
+}
+.navbar-mobile .dropdown ul {
+  position: static;
+  display: none;
+  margin: 10px 20px;
+  padding: 10px 0;
+  z-index: 99;
+  opacity: 1;
+  visibility: visible;
+  background: #fff;
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+}
+.navbar-mobile .dropdown ul li {
+  min-width: 200px;
+}
+.navbar-mobile .dropdown ul a {
+  padding: 10px 20px;
+}
+.navbar-mobile .dropdown ul a i {
+  font-size: 12px;
+}
+.navbar-mobile .dropdown ul a:hover, .navbar-mobile .dropdown ul .active:hover, .navbar-mobile .dropdown ul li:hover > a {
+  color: #f0860e;
+}
+.navbar-mobile .dropdown > .dropdown-active {
+  display: block;
+}
+
+/*--------------------------------------------------------------
+# Sections
+--------------------------------------------------------------*/
+/* Sections Common
+--------------------------------*/
+section {
+  overflow: hidden;
+}
+
+.section-title {
+  font-size: 32px;
+  color: #111;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+}
+
+.section-description {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section-title-divider {
+  width: 100px;
+  height: 3px;
+  background: #1d8ae2;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+#home {
+  background: #fff;
+  padding: 80px 0;
+}
+
+/* Get Started Section
+--------------------------------*/
+#about {
+  /* background: #fff; */
+  background: #f6f6f6;
+  padding: 80px 0;
+}
+#about .about-img {
+  overflow: hidden;
+}
+#about .about-img img {
+  max-width: 100%;
+}
+@media (max-width: 768px) {
+  #about .about-img {
+    height: auto;
+  }
+  #about .about-img img {
+    margin-left: 0;
+    padding-bottom: 30px;
+  }
+}
+#about .about-content {
+  background: #fff;
+}
+.btn-services{
+  color: #1d8ae2;
+}
+#about .about-title {
+  color: #333;
+  font-weight: 700;
+  font-size: 28px;
+}
+#about .about-text {
+  line-height: 26px;
+  margin-bottom: 15px;
+}
+#about .about-text:last-child {
+  margin-bottom: 0;
+}
+
+
+
+
+/* =====================blog Section-------------------------------*/
+/* General Blog Section Styles */
+#blog {
+  background: linear-gradient(rgba(121, 121, 121, 0.6), rgba(182, 179, 179, 0.6)), 
+              url(../image/Land.webp) fixed center center;
+  padding: 80px 0 60px 0;
+  background-size: cover;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Text Styling */
+p {
+  color: #fff;
+  font-style: italic;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: bold;
+  font-family: sans-serif;
+  color: #0a0a0a;
+  text-align: center;
+}
+
+h4 {
+  margin-top: 5%;
+  color: #0a0a0a;
+  font-size: 22px;
+}
+
+h6 {
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+/* Adjustments for Company Logo */
+#cmplogo {
+  width: 30%;
+  max-width: 200px;
+}
+#wrd img{
+  /* margin-top: 100%; */
+  width: 100%;
+}
+#wrd {
+  margin-top: 20%;
+  
+}
+
+/* Blog Quote Section */
+#blogQuote {
+  text-align: center;
+  padding: 20px;
+}
+
+#blogQuote .blogQuote-title {
+  color: #fff;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+#blogQuote .blogQuote-text {
+  color: #fff;
+  font-size: 16px;
+}
+
+/*================================= Responsive Design =========================*/
+@media (max-width: 1024px) {  /* Laptop & Tablets */
+  #blog {
+    height: auto;
+    padding: 60px 20px;
+  }
+
+  h2 {
+    font-size: 35px;
+  }
+
+  h4 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  #cmplogo {
+    width: 40%;
+  }
+}
+
+@media (max-width: 768px) {  /* Tablets & Large Phones */
+  #blog {
+    height: auto;
+    padding: 50px 15px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  h4 {
+    font-size: 18px;
+  }
+
+  h6 {
+    font-size: 16px;
+    margin-left: 0;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  #cmplogo {
+    width: 50%;
+  }
+}
+
+@media (max-width: 480px) {  /* Mobile Phones */
+  #blog {
+    height: auto;
+    padding: 40px 10px;
+  }
+  /* #wrd img{
+    margin-top: 20%;
+    width: 50%;
+  } */
+
+  h2 {
+    font-size: 24px;
+  }
+
+  h4 {
+    font-size: 16px;
+  }
+
+  h6 {
+    font-size: 14px;
+  }
+
+  p {
+    font-size: 13px;
+  }
+
+  #cmplogo {
+    width: 60%;
+  }
+}
+
+
+/* ---------blog end---------------- */
+/* =========================== objective ============================ */
+#objective {
+  background: #f6f6f6;
+  padding: 80px 0;
+}
+p{
+  color: #000000;
+}
+/* =========================== objective end ============================ */
+/*=============================== survey Section=======================------*/
+#equipment {
+  background: #fff;
+  padding: 80px 0 60px 0;
+}
+#equipmentButton button {
+  padding: 10px 15px;
+  margin: 5px;
+  border: none;
+  /* background-color: #f57b17; */
+  color: #000000;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+#equipmentButton .button {
+  margin: 5px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: #c9a98e; */
+}
+
+#equipmentButton button:hover {
+  background-color: #363636;
+  color: #1d8ae2;
+}
+#equipmentType {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+.box {
+  background-color: #ffffff;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  /* display: none; */
+}
+
+.box img {
+  max-width: 100%;
+  height: auto;
+  /* margin-bottom: 10px; */
+}
+
+.box h4 {
+  margin-top: 10px;
+  font-weight: bold;
+  /* font-size: 1.2em; */
+}
+
+.box span {
+  color: #222222;
+  text-align: justify;
+}
+#equipmentDetail{
+  margin-top: 50px;
+}
+#equipmentDetail h3{
+  color: #1d8ae2;
+  /* font-size: larger; */
+  font-weight: bold;
+  text-align-last: left;
+  text-decoration: underline grey;
+  text-underline-offset: 5px;
+}
+#equipmentDetail p{
+  text-align: justify;
+}
+
+@media (max-width: 860px) {
+  #equipmentButton .button {
+    display:inline-block
+  }
+}
+
+/*==================== surcey Section end==============------*/
+/* ==============================data Acess========================== */
+#dataAccess {
+  background: #fff;
+  padding: 80px 0 120px 0;
+}
+#dataAccess section {
+  padding: 50px;
+}
+
+#dataAccess button {
+  padding: 15px 25px;
+  font-size: 18px;
+  color: white;
+  background: green;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#dataAccess button:hover {
+  background: darkgreen;
+}
+/* ==============================data Acess========================== */
+
+/*====================== Contact Section--------------------------------*/
+#contact {
+  background: #f7f7f7;
+  padding: 80px 0 120px 0;
+}
+#contact .info {
+  color: #333333;
+}
+#contact .info i {
+  font-size: 32px;
+  color: #1d8ae2;
+  float: left;
+  line-height: 0;
+}
+#contact .info a {
+
+  color: #050505;
+
+}
+#contact .info p {
+ /* justify-content: left; */
+  padding: 0 0 10px 50px;
+  line-height: 24px;
+}
+
+@-webkit-keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/*--------------------------------------------------------------
+# Breadcrumbs
+--------------------------------------------------------------*/
+.breadcrumbs {
+  padding: 30px 0;
+}
+.breadcrumbs h2 {
+  font-size: 26px;
+  font-weight: 300;
+}
+.breadcrumbs ol {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 15px;
+}
+.breadcrumbs ol li + li {
+  padding-left: 10px;
+}
+.breadcrumbs ol li + li::before {
+  display: inline-block;
+  padding-right: 10px;
+  color: gray;
+  content: "/";
+}
+@media (max-width: 768px) {
+  .breadcrumbs .d-flex {
+    display: block !important;
+  }
+  .breadcrumbs ol {
+    display: block;
+  }
+  .breadcrumbs ol li {
+    display: inline-block;
+  }
+}
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+#footer {
+  background: #111;
+  padding: 30px 0;
+  color: #fff;
+}
+#footer .copyright {
+  text-align: center;
+}
+#footer .credits {
+  padding-top: 10px;
+  text-align: center;
+  font-size: 13px;
+  color: #ccc;
+}
+
+#title_h1{
+  color: red;
+}
