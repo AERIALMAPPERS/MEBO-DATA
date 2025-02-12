@@ -777,21 +777,22 @@ p{
   padding: 80px 0 120px 0;
 }
 #dataAccess section {
-  padding: 50px;
+  padding: 50px 20px;
 }
 
-#dataAccess button {
-  padding: 15px 25px;
-  font-size: 18px;
-  color: white;
-  background: green;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
+#download ul {
+  list-style: none;
+  padding: 0;
 }
 
-#dataAccess button:hover {
-  background: darkgreen;
+#download ul li {
+  margin: 10px 0;
+}
+
+#download ul li a {
+  color: blue;
+  text-decoration: underline;
+  font-weight: bold;
 }
 /* ==============================data Acess========================== */
 
