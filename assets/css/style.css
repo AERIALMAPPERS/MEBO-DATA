@@ -703,7 +703,7 @@ body {
   /* Ensures it covers the full viewport height */
 }
 input {
-width: 20%;
+width: 60%;
 padding: 10px;  /* Increased padding */
 font-size: 1rem;  /* Increased font size */
 margin-bottom: 15px;
