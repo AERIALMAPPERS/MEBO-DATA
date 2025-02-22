@@ -1,16 +1,27 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-app.js";
 import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-auth.js";
 import { getFirestore, setDoc, doc } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-firestore.js";
+import { sendPasswordResetEmail } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-auth.js";
 
 // Firebase configuration
+// const firebaseConfig = {
+//   apiKey: "AIzaSyBvlztyVZ26inwNK8E08K59j7CpO4RWZWA",
+//   authDomain: "login-form-b221f.firebaseapp.com",
+//   projectId: "login-form-b221f",
+//   storageBucket: "login-form-b221f.firebasestorage.app",
+//   messagingSenderId: "278241910960",
+//   appId: "1:278241910960:web:e01f737a4b090fa5fd1b75",
+// };
 const firebaseConfig = {
-  apiKey: "AIzaSyBvlztyVZ26inwNK8E08K59j7CpO4RWZWA",
-  authDomain: "login-form-b221f.firebaseapp.com",
-  projectId: "login-form-b221f",
-  storageBucket: "login-form-b221f.firebasestorage.app",
-  messagingSenderId: "278241910960",
-  appId: "1:278241910960:web:e01f737a4b090fa5fd1b75",
+  apiKey: "AIzaSyAecmMvESEmlgSUOvwSCreTku0_V4Im6O0",
+  authDomain: "mebo-sign-in-detail.firebaseapp.com",
+  projectId: "mebo-sign-in-detail",
+  storageBucket: "mebo-sign-in-detail.firebasestorage.app",
+  messagingSenderId: "689960018816",
+  appId: "1:689960018816:web:d240261de2257f493c5765",
+  measurementId: "G-NKCX3TF0YX"
 };
+
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
@@ -100,4 +111,29 @@ signIn.addEventListener("click", (event) => {
         showMessage("Login failed. Try again.", "signInMessage");
       }
     });
+});
+
+
+const resetPasswordButton = document.getElementById("resetPassword");
+
+resetPasswordButton.addEventListener("click", async (event) => {
+    event.preventDefault(); // Prevent page reload
+    const email = document.getElementById("resetEmail").value;
+
+    if (!email) {
+        showMessage("Please enter your email.", "resetMessage");
+        return;
+    }
+
+    try {
+        await sendPasswordResetEmail(auth, email);
+        showMessage("Password reset email sent! Check your inbox.", "resetMessage");
+    } catch (error) {
+        console.error("Password Reset Error:", error.code, error.message);
+        if (error.code === "auth/user-not-found") {
+            showMessage("No account found with this email.", "resetMessage");
+        } else {
+            showMessage("Unable to send reset email. Try again.", "resetMessage");
+        }
+    }
 });
