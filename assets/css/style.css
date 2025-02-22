@@ -85,6 +85,97 @@ h1, h2, h3, h4, h5, h6 {
 /*--------------------------------------------------------------
 # Welcome
 --------------------------------------------------------------*/
+/* #hero {
+  display: table;
+  width: 100%;
+  height: 100vh;
+  background: url(../img/BackImg.jpeg) top center;
+  background-size: cover;
+}
+@media (min-width: 1024px) {
+  #hero {
+    background-attachment: fixed;
+  }
+}
+#hero .hero-logo {
+  margin: 20px;
+}
+#hero .hero-logo img {
+  max-width: 100%;
+}
+#hero .hero-container {
+  background: rgba(0, 0, 0, 0.8);
+  display: table-cell;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  vertical-align: middle;
+}
+#hero h1 {
+  margin: 30px 0 10px 0;
+  font-weight: 700;
+  line-height: 48px;
+  text-transform: uppercase;
+  color: #fff;
+}
+@media (max-width: 768px) {
+  #hero h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+}
+#hero h2 {
+  color: #ccc;
+  margin-bottom: 50px;
+}
+#hero h2 span {
+  color: #fff;
+  transition: 0.3s;
+  border-bottom: 2px solid #f0860e;
+}
+@media (max-width: 768px) {
+  #hero h2 {
+    font-size: 24px;
+    line-height: 26px;
+    margin-bottom: 30px;
+  }
+  #hero h2 .rotating {
+    display: block;
+  }
+}
+#hero .rotating > .animated {
+  display: inline-block;
+}
+#hero .actions a {
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 20px;
+  border-radius: 2px;
+  transition: 0.5s;
+  margin: 10px;
+}
+#hero .btn-get-started {
+  background: #f0860e;
+  border: 2px solid #f0860e;
+  color: #fff;
+}
+#hero .btn-get-started:hover {
+  background: none;
+  border: 2px solid #fff;
+  color: #fff;
+}
+#hero .btn-services {
+  border: 2px solid #fff;
+  color: #fff;
+}
+#hero .btn-services:hover {
+  background: #f0860e;
+  border: 2px solid #f0860e;
+} */
 
 /*--------------------------------------------------------------
 # Header
@@ -411,7 +502,7 @@ section {
   background: #fff;
 }
 .btn-services{
-  color: #0D4977;
+  color: #1d8ae2;
 }
 #about .about-title {
   color: #333;
@@ -460,7 +551,7 @@ h2 {
   text-align: center;
 }
 
-h3 {
+h4 {
   margin-top: 5%;
   color: #0a0a0a;
   font-size: 22px;
@@ -685,73 +776,23 @@ p{
   background: #fff;
   padding: 80px 0 120px 0;
 }
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
+#dataAccess section {
+  padding: 50px 20px;
+}
+
+#download ul {
+  list-style: none;
   padding: 0;
-  /* background-image: url("../img/gvv.webp"); */
-  background-size: cover;
-  /* Makes the image cover the entire screen */
-  background-position: center;
-  /* Centers the image */
-  background-repeat: no-repeat;
-  /* Prevents repetition */
-  background-attachment: fixed;
-  /* Keeps it fixed while scrolling */
-  width: 100%;
-  height: 100vh;
-  /* Ensures it covers the full viewport height */
-}
-input {
-width: 60%;
-padding: 10px;  /* Increased padding */
-font-size: 1rem;  /* Increased font size */
-margin-bottom: 15px;
-border: 2px solid #000; /* Darker border for visibility */
-border-radius: 8px;
-}
-.container {
-  width: 80%;
-  margin: auto;
-}
-h2 {
-  text-align: center;
-}
-p{
-  text-align: center;
-  font-style: normal;
-font-size: 1rem;
-line-height: 1.5rem;
 }
 
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 10px;
+#download ul li {
+  margin: 10px 0;
 }
 
-th,
-td {
-  padding: 10px;
-  text-align: left;
-  border-bottom: 1px solid #ddd;
-  font-size: 1.2rem;
-}
-
-th {
-  background-color: #000000;
-  color: white;
-}
-
-a {
-  text-decoration: none;
-  color: rgb(17, 17, 17);
-}
-
-.icon {
-  width: 20px;
-  height: 20px;
-  margin-left: 5px;
+#download ul li a {
+  color: blue;
+  text-decoration: underline;
+  font-weight: bold;
 }
 /* ==============================data Acess========================== */
 
