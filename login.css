@@ -14,7 +14,7 @@ body {
     height: 100vh;
     /* background: url('./Land.webp') no-repeat center center fixed; */
     background: linear-gradient(rgba(68, 68, 68, 0.6), rgba(59, 59, 59, 0.6)), 
-              url(./Land.webp) fixed center center;
+              url(./assets/img/Albion.jpg) fixed center center;
     background-size: cover;
 }
 
