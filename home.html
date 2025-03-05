@@ -456,38 +456,96 @@
         </div>
     </section>
     <!--===================== End objective Section =================================-->
- <!-- ===================     data access======================= -->
- <section id="dataAccess">
-  <!-- <section id="indexDredgers"> -->
-  <div class="container" data-aos="fade-up">
-    <div class="row">
-      <div class="col-md-12">
-        <h3 class="section-title"> Download Survey Data</h3>
-        <div class="section-title-divider"></div>
-        <!-- <p class="section-description">The primary objective of this survey is to provide scientifically validated
-          dataset
-          that will serve as the foundation for the planning, design, and execution of the
-          Mebo Irrigation Project. Drawing from methodologies outlined in the work
-          order and relevant tender documents, the specific goals include:</p>
-          <h1>Mebo Irrigation Project - Data Download</h1> -->
-    <!-- Download Section -->
-    <!-- Data Download Section -->
+   <!-- <section id="dataAccess"> -->
+  <!-- ===================     data access======================= -->
+  <section id="dataAccess">
+    <!-- <section id="indexDredgers"> -->
+    <div class="container" data-aos="fade-up">
+      <div class="row">
+        <div class="col-md-12">
+          <h3 class="section-title"> Download Survey Data</h3>
+          <div class="section-title-divider"></div>
+          <!-- <p class="section-description">The primary objective of this survey is to provide scientifically validated
+            dataset
+            that will serve as the foundation for the planning, design, and execution of the
+            Mebo Irrigation Project. Drawing from methodologies outlined in the work
+            order and relevant tender documents, the specific goals include:</p>
+            <h1>Mebo Irrigation Project - Data Download</h1> -->
    
-  <!-- Data Download Section -->
-  <section id="download">
-
-    <p>Access detailed survey reports, maps, and datasets from the project.</p>
-    <!-- <ul>
-        <li><a href="files/Topographical_Survey_Report.pdf" download>Topographical Survey Report (PDF)</a></li>
-        <li><a href="files/Bathymetry_Data.csv" download>Bathymetric Data (CSV)</a></li>
-        <li><a href="files/LiDAR_Survey_Maps.zip" download>LiDAR Survey Maps (ZIP)</a></li>
-        <li><a href="files/UAV_Aerial_Images.zip" download>UAV Aerial Images (ZIP)</a></li>
-    </ul> -->
-</section>
+  
+      <!-- Download Section -->
+      <!-- Data Download Section -->
+     
+    <!-- Data Download Section -->
+    <div class="container">
+      <!-- <h2>DATA ACCESS</h2> -->
+      <p>The Detailed Topographical and Bathymetric Survey for the Mebo Irrigation Project successfully achieved its
+          objectives by leveraging advanced technologies such as DGPS, UAVs, LiDAR, and GIS tools.<br> Despite challenges
+          such as shallow water depths in the river, alternative methodologies ensured comprehensive data collection
+          and adherence to the project’s technical requirements.<br>
+          <p> Export maps and designs in formats like <span> DWG, PDF, or DGN </span> for sharing and collaboration.<br>
+              web portals provide download options for DWG and PDF files, allowing users to view and access essential data efficiently </p>
+    <label >search here
+              <input type="text" id="searchBar" placeholder="Search documents..." onkeyup="searchDocuments()">
+            </label>
+      <table>
+          <thead>
+              <tr>
+                  <th>Title</th>
+                  <th>View / Download</th>
+              </tr>
+          </thead>
+          <tbody id="documentTable">
+             
+                  <!-- <td>Data</td>
+                  <td><a href=" https://aerialmappers.github.io/final-coastal" target="_blank">View (6 MB) <img
+                              src="https://img.icons8.com/material-rounded/24/download--v1.png" alt="download--v1"
+                              class="icon"></a></td> -->
+              <tr>
+                  <td>Report of Mebo Project </td>
+                  <td><a href="./data/Project_Report_Mebo_Irrigation_Vol-I.pdf" target="_blank">View/Download <img
+                              src="https://img.icons8.com/color/48/pdf.png"  alt=" deatils report of cwc project "class="icon"></a></td>
+              </tr>
+              <tr>
+                  <td>Milestone-1</td>
+                  <td><a href="https://drive.google.com/drive/folders/1JyacrW3MmHp0moBffufzD1VJa6dAwS-K?usp=drive_link" download>Download <img src="https://img.icons8.com/material-rounded/24/download--v1.png"  alt="Milestone-1 data file download icon" class="icon"></a></td>
+              </tr>
+              <tr>
+                <td>Milestone-2</td>
+                <td><a href="https://drive.google.com/drive/folders/1JQ4_EyMQz5J8Erx-F9luqoEeaOR6uxhI?usp=drive_link" download>Download <img src="https://img.icons8.com/material-rounded/24/download--v1.png"  alt="Milestone-2 data file download icon" class="icon"></a></td>
+            </tr>
+            <tr>
+              <td>Milestone-3</td>
+              <td><a href="https://drive.google.com/drive/folders/1PmUBFG4Zk3qOVXwB5Vi8capXg29n-MkJ?usp=drive_link" download>Download <img src="https://img.icons8.com/material-rounded/24/download--v1.png"  alt="Milestone-3 data file download icon" class="icon"></a></td>
+          </tr>
+          <tr>
+            <td>Milestone-4</td>
+            <td><a href="https://drive.google.com/drive/folders/1TWCn1k1svJhcz4ipOMMRh9uNL-wfHxiE?usp=drive_link" download>Download <img src="https://img.icons8.com/material-rounded/24/download--v1.png"  alt="Milestone-4 data file download icon" class="icon"></a></td>
+        </tr>
+        <tr>
+          <td>Milestone-5</td>
+          <td><a href="https://drive.google.com/drive/folders/1HuyC50pVLoRuGGRuvoLGY7KoOvI1Pdl3?usp=drive_link" download>Download <img src="https://img.icons8.com/material-rounded/24/download--v1.png"  alt="Milestone-5 data file download icon" class="icon"></a></td>
+      </tr>
+          </tbody>
+      </table>
+  </div>
+  
+  <script>
+      function searchDocuments() {
+          let input = document.getElementById("searchBar").value.toLowerCase();
+          let tableRows = document.querySelectorAll("#documentTable tr");
+  
+          tableRows.forEach(row => {
+              let text = row.innerText.toLowerCase();
+              row.style.display = text.includes(input) ? "" : "none";
+          });
+      }
+  </script>
+  
+        </div>
       </div>
-    </div>
-</section>
- <!-- ===================    end data access======================= -->
+  </section>
+   <!-- ===================    end data access======================= -->
     
     <!-- ======= Contact Section ===================================== -->
     <section id="contact">
